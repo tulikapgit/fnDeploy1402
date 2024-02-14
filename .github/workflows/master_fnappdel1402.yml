@@ -33,7 +33,7 @@ jobs:
           popd
       - name: Sign in to Azure 
       # Use the GitHub secret you added.
-        uses: azure/login@v1
+        uses: azure/login@v1.5.0
         with:
           creds: ${{ secrets.AZURE_CREDENTIALS }}
       - name: 'Run Azure Functions Action'
